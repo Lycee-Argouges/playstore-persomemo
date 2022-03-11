@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|start"
+        android:hint="@string/editText"
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:padding="25dp"
+        android:singleLine="false"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Note numéro 1 -->
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV1"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 2 -->
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV2"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 3 -->
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV3"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 4 -->
+            <LinearLayout
+                android:id="@+id/LL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV4"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 5 -->
+            <LinearLayout
+                android:id="@+id/LL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV5"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 6 -->
+            <LinearLayout
+                android:id="@+id/LL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV6"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 7 -->
+            <LinearLayout
+                android:id="@+id/LL7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV7"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 8 -->
+            <LinearLayout
+                android:id="@+id/LL8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV8"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 9 -->
+            <LinearLayout
+                android:id="@+id/LL9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV9"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 10 -->
+            <LinearLayout
+                android:id="@+id/LL10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV10"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 11 -->
+            <LinearLayout
+                android:id="@+id/LL11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV11"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 12 -->
+            <LinearLayout
+                android:id="@+id/LL12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV12"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 13 -->
+            <LinearLayout
+                android:id="@+id/LL13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV13"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 14 -->
+            <LinearLayout
+                android:id="@+id/LL14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV14"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 15 -->
+            <LinearLayout
+                android:id="@+id/LL15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV15"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 16 -->
+            <LinearLayout
+                android:id="@+id/LL16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV16"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 17 -->
+            <LinearLayout
+                android:id="@+id/LL17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV17"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 18 -->
+            <LinearLayout
+                android:id="@+id/LL18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV18"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 19 -->
+            <LinearLayout
+                android:id="@+id/LL19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV19"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- Note numéro 20 -->
+            <LinearLayout
+                android:id="@+id/LL20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#f4fefe">
+                    <ImageView
+                        android:id="@+id/ButTV20"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:foregroundGravity="top"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ImageViewContent"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        app:tint="?attr/colorPrimary"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/TexTV20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:textAlignment="gravity"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:background="#f4fefe"
+                    android:text="@string/scrollText"
+                    android:textColor="#112233"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+
+            <!-- Marge de la fin du scroll -->
+            <TextView
+                android:id="@+id/TexTVfin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:adjustViewBounds="true"
+                android:textAlignment="gravity"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="18dp">
+        <TextView
+            android:id="@+id/section_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_get"
+            app:tint="#f4fefe"
+            app:backgroundTint="@color/blue_spot2"
+            tools:ignore="MissingConstraints"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

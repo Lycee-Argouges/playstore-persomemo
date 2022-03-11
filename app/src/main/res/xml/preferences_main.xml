@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <PreferenceCategory
+            android:layout="@layout/design_main"/>
+    <PreferenceCategory
+            android:title="Accès aux données">
+
+            <CheckBoxPreference
+                android:key="LinkStoreLocal"
+                android:title="@string/Pref0"
+                android:defaultValue="true"/>
+
+            <CheckBoxPreference
+                android:key="LinkStoreDefault"
+                android:title="@string/Pref1"
+                android:summaryOn=""
+                android:summaryOff="Défaut : Documents"
+                android:dependency="LinkStoreLocal"
+                android:defaultValue="false"/>
+
+            <ListPreference
+                android:key="LinkStore"
+                android:dialogTitle="Choisissez votre emplacement d'enregistrement"
+                android:entries="@array/liste_preferences"
+                android:entryValues="@array/liste_preferences_val"
+                android:title="Définir le lieu de stockage"
+                android:dependency="LinkStoreDefault"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

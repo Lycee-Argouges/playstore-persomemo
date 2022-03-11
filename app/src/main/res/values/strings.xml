@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PersoMemo</string>
+    <string name="tab_text_1"></string>
+    <string name="tab_text_2">Rédiger</string>
+    <string name="Notice"> Une application du Lycée André Argouges</string>
+    <string name="editText">ECRIVEZ UNE NOTE \nPUIS ENREGISTREZ-LA</string>scrollText
+    <string name="scrollText">Note numéro N</string>
+    <string name="ImageViewContent">X</string>
+    <string name="labelPreference">Préférences</string>
+    <string name="Preference">Préférences de l\'application</string>
+    <string name="Pref0">Stockage sur la mémoire externe</string>
+    <string name="Pref1">Choisir l\'emplacement d\'enregistrement</string>
+    <array name="liste_preferences">
+        <item>Données de l\'application</item>
+        <item>Medias du téléphone</item>
+        <item>Mes documents</item>
+        <item>Téléchargement</item>
+    </array>
+    <array name="liste_preferences_val">
+        <item>/Android/data/</item>
+        <item>/Android/media/</item>
+        <item>/Documents/</item>
+        <item>/Download/</item>
+    </array>
+    <string name="Contact1"><b>CHU Grenoble</b> \nBoulevard de la chantourne, La tronche \n </string>
+    <string name="Contact2"><b>SOS médecins</b> \n7j /7 24H/24 \n1 avenue du 8 mai 1945, Echirolles</string>
+    <string name="Contact3"><b>Médecins 7 sur 7 (8h à 24h)</b> \n84 cours Jean Jaurès, Grenoble \n(tram E arrêt Condorcet)</string>
+    <string name="Contact4"><b>Centre de santé Abbaye Jouhaux</b> \n28 rue Elie Cartan, Grenobke \n </string>
+    <string name="Contact5"><b>Planning familial</b> \n30 boulevard Gambetta, Grenoble \n(Antenne quartier Abbaye 04.76.54.26.27)</string>
+    <string name="Contact6"><b>Service médico psychologique universitaire</b> \n(SMPU) 10 rue Augereau, Grenoble) \n </string>
+    <string name="Contact7"><b>Centre d\'information et dépistage du VIH</b> \nCentre départemental de santé \n23 avenue Albert 1er de Belgique, Grenoble</string>
+    <string name="Contact8"><b>Consultations Assistantes sociales</b> \nService social étudiant, 361 allée Hector Berlioz \nDomaine universitaire, Saint Martin d`Hères</string>
+</resources>

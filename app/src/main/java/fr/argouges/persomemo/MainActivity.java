@@ -1,13 +1,18 @@
 package fr.argouges.persomemo;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -47,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         ImageView pref = findViewById(R.id.pref);
         final Intent intent = new Intent().setClass(this, PreferenceActivity.class);
         final Intent intentcontact = new Intent().setClass(this, ContactActivity.class);
+
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
+        {
+            askForPermissionStorage();
+        }
 
 
         /*fab.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         refresh(true);
+    }
+
+    private void askForPermissionStorage()
+    {
+            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, 2);
     }
 
     public void refresh(boolean retour) {
